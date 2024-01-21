@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div id="score-container">
+            <p>Jogador X: <span id="score-x">0</span></p>
+            <p>Jogador O: <span id="score-o">0</span></p>
+        </div>
+        <div id="turn-container">
+            <p>Vez do Jogador: <span id="current-player">X</span></p>
+        </div>
+        <div id="game-mode-container">
+            <label for="game-mode">Modo de Jogo:</label>
+            <select id="game-mode">
+                <option value="player">Dois Jogadores</option>
+                <option value="bot">Contra o Bot</option>
+            </select>
+        </div>
+        <div class="game-container">
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+            <div class="cell" id="9"></div>
+        </div>
+        <div class="game-message" id="game-message"></div>
+        <div class="overlay" id="victory-modal">
+            <div class="modal">
+                <p id="winner-message"></p>
+                <button id="play-again-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
